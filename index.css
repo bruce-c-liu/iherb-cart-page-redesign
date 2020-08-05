@@ -31,7 +31,7 @@ body {
 .universal-header {
   height: 28px;
   margin: 0 auto;
-  width: min(95%, 1000px);
+  width: min(95%, 1100px);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -94,7 +94,7 @@ body {
 .primary-nav {
   padding: 8px 0;
   margin: 0 auto;
-  width: min(95%, 1000px);
+  width: min(95%, 1100px);
   display: flex;
   align-items: center;
 }
@@ -220,12 +220,13 @@ body {
   fill: white;
   width: 35px;
   flex-shrink: 0;
+  cursor: pointer;
 }
 
 .order-info {
   margin: 0 auto;
   padding-top: 100px;
-  width: min(95%, 1000px);
+  width: min(95%, 1100px);
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -356,6 +357,7 @@ select {
 .total {
   flex: 0 1 20%;
   text-align: right;
+  font-size: 1.4rem;
 }
 .crossed-out {
   text-decoration: line-through;
@@ -366,11 +368,10 @@ select {
   color: #458500;
 }
 .total .red-text {
-  font-size: 1.2rem;
   color: rgb(189, 60, 55);
 }
 .final-price {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   margin-top: 10px;
   font-weight: bold;
   color: rgb(59, 59, 59);
@@ -379,10 +380,11 @@ select {
 .summary {
   flex: 0 1 32%;
   box-shadow: 2px 3px 6px 2px #e0e0e0;
-  padding: 15px 10px;
+  padding: 20px 10px;
   position: sticky;
   top: 100px;
   align-self: flex-start;
+  border-radius: 4px;
 }
 
 .summary .container {
@@ -530,7 +532,7 @@ select {
 
 @media (max-width: 900px) {
   html {
-    font-size: 50%;
+    font-size: 55%;
   }
 }
 
