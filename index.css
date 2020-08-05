@@ -48,6 +48,7 @@ body {
   border-radius: 4px;
   color: #525252;
   font-weight: bold;
+  font-size: 1.2rem;
   height: 100%;
 }
 .promotional-link:hover {
@@ -171,7 +172,7 @@ body {
 .search-box {
   position: relative;
   margin-left: auto;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   flex: 0 1 25%;
   transition: flex 0.4s;
   align-self: stretch;
@@ -293,6 +294,7 @@ body {
 
 .row {
   display: flex;
+  justify-content: space-between;
   border-bottom: 1px solid rgb(228, 228, 228);
   padding: 15px 0;
   font-size: 1.2rem;
@@ -333,6 +335,7 @@ img {
 
 .actions {
   margin-top: 10px;
+  font-size: 1.3rem;
 }
 .action-move {
   color: #458500;
@@ -343,12 +346,19 @@ img {
 }
 
 .quantity {
-  flex: 0 1 15%;
+  flex: 0 1 13%;
   text-align: center;
 }
+.mobile.quantity {
+  display: none;
+  margin-right: 12px;
+}
+.mobile select {
+  font-size: 1.5rem;
+}
 select {
-  font-size: 1rem;
-  width: 40px;
+  font-size: 1.5rem;
+  width: max(60%, 40px);
   border-radius: 4px;
   border: 1px solid rgb(170, 170, 170);
   padding: 3px;
@@ -524,6 +534,7 @@ select {
   color: white;
   text-decoration: none;
   justify-content: center;
+  box-shadow: 1px 1px 4px 2px #d2d2d2;
 }
 .view-order-summary svg {
   /* width: 20px; */
@@ -570,7 +581,7 @@ select {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 460px) {
   .universal-header-container {
     display: none;
   }
@@ -585,5 +596,27 @@ select {
 
   .green-text {
     display: block;
+  }
+
+  .row.header {
+    display: none;
+  }
+
+  .products {
+    flex: 0 1 78%;
+  }
+
+  .quantity {
+    display: none;
+  }
+
+  .mobile.quantity {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 350px) {
+  .search {
+    font-size: 1.2rem;
   }
 }
