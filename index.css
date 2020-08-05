@@ -371,7 +371,7 @@ select {
   font-size: 1.4rem;
 }
 .savings {
-  margin-top: 5px;
+  margin-top: 3px;
 }
 .crossed-out {
   text-decoration: line-through;
@@ -458,13 +458,13 @@ select {
 .summary hr {
   margin-top: 15px;
 }
-.summary-row.total {
+.summary-row.estimated-total {
   color: black;
   font-weight: bold;
   font-size: 1.5rem;
   margin-top: 15px;
 }
-.summary-row.total p + p {
+.summary-row.estimated-total p + p {
   font-size: 2rem;
 }
 .check-out {
