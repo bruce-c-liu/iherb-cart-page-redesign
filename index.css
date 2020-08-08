@@ -562,10 +562,6 @@ select {
   justify-content: center;
   box-shadow: 1px 1px 4px 2px #d2d2d2;
 }
-.view-order-summary svg {
-  /* width: 20px; */
-  /* margin-top: px; */
-}
 
 @media (max-width: 900px) {
   html {
